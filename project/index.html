@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+     <link rel="stylesheet" href="style.css"/>
+     <title>ArtStar</title>
+ </head>
+   <body>
+       <header>
+           <div class="navbar">
+              <div class="logo">
+                 <a href="#">SKETCHER</a>
+              </div>
+             <ul class="links">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="about.html">About</a></li>
+                 <li><a href="services.html">Services</a></li>
+             </ul>
+             <a href="#" class="action_btn">Get Started</a>
+             <div class="toggle_btn">
+                 <i class="fa-solid fa-bars"></i>
+             </div>
+         </div>
+
+            <div class="dropdown_menu">
+                <li><a href="hero">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="services">Services</a></li>
+                <li><a href="#" class="action_btn">Get Started</a></li>
+                <from action="/action_page.php"></from>
+                <input type="file" id="myfile" name="filename">
+                <input type="submit">
+            </div>
+     </header>
+
+     <main>
+        <section id="hero">
+            <h1>My We Find Solace In Art</h1>
+            <p>
+                "A True Artist Is Not One Who Is Inspired, But One Who Inspires Others".
+            </p>
+        </section>
+
+     </main>
+
+        <script>
+          const toggleBtn = document.querySelector('.toggle_btn')
+          const toggleBtnIcon = document.querySelector('.toggle_btn i')
+          const dropdownmenu = document.querySelector('.dropdown_menu')
+
+          toggleBtn.onclick = function () {
+            dropdownmenu.classList.toggle('open')
+            const isOpen = dropdownmenu.classList.contains('open')
+
+          toggleBtnIcon.classList = isOpen
+           ? 'fa-solid fa-xmark'
+           : 'fa-solid fa-bars'
+          }
+        </script>
+    </body>
+
+</html>
