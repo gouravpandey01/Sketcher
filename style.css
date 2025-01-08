@@ -112,7 +112,7 @@ header{
    justify-content: center;
 }
 
-section#hero{
+section#index{
    height: calc(100vh - 60px);
    display: flex;
    flex-direction: column;
@@ -122,7 +122,7 @@ section#hero{
    color: #37fae0d3;
 }
 
-#hero h1{
+#index h1{
    font-size: 3rem;
    margin-bottom: 1rem;
 }
@@ -136,6 +136,20 @@ section#about{
    color: #37fae0d3;
 }
 #about h1{
+   font-size: 3rem;
+   margin-bottom: 1rem;
+}
+
+section#services{
+   height: calc(100vh - 60px);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   color: #37fae0d3;
+}
+#sevices h1{
    font-size: 3rem;
    margin-bottom: 1rem;
 }
